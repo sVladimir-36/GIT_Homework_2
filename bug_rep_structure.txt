@@ -1,0 +1,10 @@
+id
+header
+description
+severity
+priority
+steps to reproduse
+actual result
+expected result
+attachments
+assigned to
