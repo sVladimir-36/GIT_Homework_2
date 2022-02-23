@@ -1,0 +1,66 @@
+GitHub. HW_2
+1. На локальном репозитории сделать ветки для:
+- Postman===git branch Postman
+- Jmeter===git branch Jmeter
+- CheckLists===git branch CheckLists
+- Bag Reports===git branch Bag_reports
+- SQL===git branch SQL
+- Charles=== git branch Charles
+- Mobile testing===git branch Mobile_testing
+
+2. Запушить все ветки на внешний репозиторий===1)git push -u origin Postman
+						2)git push -u origin Jmeter
+						3)git push -u origin CheckLists
+						4)git push -u origin Bag_reports
+						5)git push -u origin SQL
+						6)git push -u origin Charles
+						7)git push -u origin Mobile_testing
+					     
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта=== 1)git checkout Bag_reports
+									       2) vim bug_rep_structure.txt
+										id
+										header
+										description
+										severity
+										priority
+										steps to reproduse
+										actual result
+										expected result
+										attachments
+										assigned to
+
+
+4. Запушить структуру багрепорта на внешний репозиторий===1) git add bug_rep_structure.txt
+							  2) git commit -m "upload file in remote rep"
+							  3) git push
+	
+
+5. Вмержить ветку Bag Reports в Main===1)git checkout main
+				       2)git merge Bag_reports 
+
+6. Запушить main на внешний репозиторий.===1)git push
+					     Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+					     To https://github.com/sVladimir-36/GIT_Homework_2.git
+   					     8d3d4e9..25e3f11  main -> main
+
+7. В ветке CheckLists набросать структуру чек листа.=== 1) vim checklist_structure.txt
+							  -serial number
+							  -check name
+							  -check result (pass,fail)
+							  -comments
+
+
+8. Запушить структуру на внешний репозиторий===1) git add .
+					       2) git commit -m "added new file"
+					       3) git push
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main===
+				1)перейти на страницу GitHub
+				2)в поле появившегося уведомления "CheckLists had recent pushes 1 minute ago" нажать на кнопку "Compare & pull request"
+				3)на открывшейся вкладке под заголовком  "Open a pull request" в поле "base" выбрать ветку "main"
+				4)под полем для комментария нажать на кнопку "Create pull request"
+				5)дождаться окончания проверки на конфликты
+				6)нажать на кнопку "Merge pull request" 
+				7)нажать на кнопку "Confirm merge"
+
+10. Синхронизировать Внешнюю и Локальную ветки Main=== git pull
