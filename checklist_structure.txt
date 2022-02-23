@@ -1,0 +1,4 @@
+-serial number
+-check name
+-check result (pass,fail)
+-comments
